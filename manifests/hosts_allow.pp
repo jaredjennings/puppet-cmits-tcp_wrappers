@@ -16,6 +16,6 @@
 class tcp_wrappers::hosts_allow {
     file { '/etc/hosts.allow':
         ensure => present,
-        owner => root, group => 0, mode => 0644,
+        owner => root, group => 0, mode => '0644',
     }
 }

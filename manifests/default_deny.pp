@@ -24,7 +24,7 @@ class tcp_wrappers::default_deny {
 # them, and we write the \verb!hosts.deny!, nothing will be allowed.
     require augeas
     file { "/etc/hosts.deny":
-        owner => root, group => 0, mode => 0644,
+        owner => root, group => 0, mode => '0644',
         content => "# Deny by default\nALL: ALL\n";
     }
 }
